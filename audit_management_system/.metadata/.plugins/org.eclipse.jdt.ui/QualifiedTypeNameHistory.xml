@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.mockito.Mock"/>
+    <fullyQualifiedTypeName name="com.cognizant.model.QuestionsEntity"/>
+    <fullyQualifiedTypeName name="com.cognizant.pojo.AuditType"/>
+</qualifiedTypeNameHistroy>
