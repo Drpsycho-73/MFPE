@@ -8,6 +8,10 @@
 	<title>Audit Management System</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
@@ -23,9 +27,11 @@
 		}
 		
 		.heading{
-			text-align: center;
-			
-			padding-top: 3%;
+			display:flex;
+			justify-content:flex-end;
+			padding-right:18%;
+			padding-top:5%;
+			text-align:center;
 		}
 		
 		.wave{
@@ -43,6 +49,7 @@
 		    grid-template-columns: repeat(2, 1fr);
 		    grid-gap :7rem;
 		    padding: 0 2rem;
+		    
 		}
 		
 		.img{
@@ -56,7 +63,9 @@
 			justify-content: flex-start;
 			align-items: center;
 			text-align: center;
-			 padding-top: 0%;
+			padding-top: 0%;
+			padding-left:10%;
+			padding-bottom: 30%
 		}
 		
 		.img img{
@@ -93,7 +102,7 @@
 		}
 		
 		.i{
-			color: #d9d9d9;
+			color: #0B539F;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -124,7 +133,7 @@
 			bottom: -2px;
 			width: 0%;
 			height: 2px;
-			background-color: #38d39f;
+			background-color: #0B539F;
 			transition: .4s;
 		}
 		
@@ -146,7 +155,7 @@
 		}
 		
 		.input-div.focus > .i > i{
-			color: #38d39f;
+			color: #0B539F;
 		}
 		
 		.input-div > div > input{
@@ -178,7 +187,7 @@
 		}
 		
 		a:hover{
-			color: #38d39f;
+			color: #0B539F;
 		}
 		
 		.btn{
@@ -188,10 +197,10 @@
 			border-radius: 25px;
 			outline: none;
 			border: none;
-			background-image: linear-gradient(to bottom, #33ccff 0%, #66ffcc 100%);
+			background-image: linear-gradient(to bottom, #33ccff 0%, #0B539F 100%);
 			background-size: 200%;
 			font-size: 1.2rem;
-			color: 	white;
+			color: 	black;
 			font-family: 'Poppins', sans-serif;
 			text-transform: uppercase;
 			margin: 1rem 0;
@@ -246,20 +255,22 @@
 </head>
 <body>
 <div class="heading">
-	<h1> Audit Management System</h1>
+	<h1> Audit Management<br> System</h1>
 	</div>
-	<img class="wave" src="/images/wave.png">
+	<img class="wave" src="https://img.freepik.com/free-vector/site-stats-concept-illustration_114360-1509.jpg?w=740&t=st=1656262449~exp=1656263049~hmac=302a99db4f5771e9c57996f12de7cf42b08070d2e58a4d0908bdb44cf0b49913">
 	<div class="container">
 		
 		<div class="img">
+			<!-- <img src="img/bg.svg"> -->
 		</div>
 		<div class="login-content">
 		<c:choose>
 		
 		<c:when test="${msg == null}">
 			<form:form action="/home" modelAttribute="user" method="post">
-				<img src="/images/icon.png">
-				<br><br>
+				<img src="https://img.freepik.com/free-vector/character-illustration-people-holding-user-account-icons_53876-43022.jpg?t=st=1656269563~exp=1656270163~hmac=c8963138da8aa42b5dbaf2dff0ac0927368b07dac1e18b3cd3ad9992a59a79c9&w=900">
+				<br><br><br>
+				<!-- <h2 class="title">Welcome</h2> -->
 				
            		<div class="input-div one">
            		   <div class="i">
@@ -279,6 +290,7 @@
            		    	<form:input type="password" path="password" class="input"/>
             	   </div>
             	</div>
+				<!-- <a href="#">Forgot Password?</a> -->
 				<br>
             	<input type="submit" class="btn" value="Login">
             </form:form>

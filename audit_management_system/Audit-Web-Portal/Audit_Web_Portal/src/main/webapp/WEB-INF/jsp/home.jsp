@@ -16,27 +16,30 @@
 <title>Project Details - Audit Management System</title>
 <style>
 body {
-	background-image:url('images/audit.png');
+	background: linear-gradient(to right,#33ccff , #0B539F);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 form {
 	background: white;
-	opacity: 0.90;
 }
-
+#submit-button{
+	background-color:0B539F;
+}
 
 </style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-		<a class="navbar-brand"><strong>Audit Management System</strong></a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<img style="width:65px; height:45px;" src="https://img.freepik.com/free-vector/character-illustration-people-holding-user-account-icons_53876-43022.jpg?t=st=1656269563~exp=1656270163~hmac=c8963138da8aa42b5dbaf2dff0ac0927368b07dac1e18b3cd3ad9992a59a79c9&w=900">
+		
+		<a class="navbar-brand pl-2"><strong>Audit Management System</strong></a>
 
 			<span class="navbar-text ml-auto"> <a href="/logout"><strong>Logout</strong></a>
 			</span>
 		
 	</nav>
-	<div class="container" >
+	<div class="container">
        
 		<h3 class="m-4 text-center display-4" style="color:black"><strong>Project Details</strong></h3>
 
@@ -84,7 +87,7 @@ form {
 						<label for="SOX" class="form-control"> SOX</label>
 					</div>
 					<input type="submit" class="btn btn-primary btn-block mt-3"
-						value="Submit">
+						value="Submit" style="background-color:#0B539F;">
 				</form:form>
 			</div>
 

@@ -19,13 +19,12 @@
 <title>Audit Questions</title>
 <style>
 body {
-	background-image:url('images/audit.png');
+	background: linear-gradient(to right,#33ccff , #0B539F);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 form {
-	background: white;
-	opacity: 0.92;
+	background: #FFF;
 }
 
 h3 {
@@ -34,7 +33,9 @@ h3 {
 </style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<img style="width:65px; height:45px;" src="https://img.freepik.com/free-vector/character-illustration-people-holding-user-account-icons_53876-43022.jpg?t=st=1656269563~exp=1656270163~hmac=c8963138da8aa42b5dbaf2dff0ac0927368b07dac1e18b3cd3ad9992a59a79c9&w=900">
+	
 		<a class="navbar-brand"><strong>Audit Management System</strong></a>
 
 			<span class="navbar-text ml-auto"> <a href="/logout"><strong>Logout</strong></a>
@@ -77,7 +78,7 @@ h3 {
 				</div>
 
 			</c:forEach>
-			<input type="Submit" value="Submit" class="btn btn-primary btn-block mt-3" />
+			<input type="Submit" value="Submit" class="btn btn-primary btn-block mt-3"  style="background-color:#0B539F;"/>
 
 		</form:form>
 	</div>
