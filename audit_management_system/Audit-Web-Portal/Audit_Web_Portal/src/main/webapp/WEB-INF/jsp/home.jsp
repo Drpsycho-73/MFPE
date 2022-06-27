@@ -16,7 +16,9 @@
 <title>Project Details - Audit Management System</title>
 <style>
 body {
-	background: linear-gradient(to right,#33ccff , #0B539F);
+	background-image: url("https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+	background-repeat:no-repeat;
+	background-size:cover;
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -39,13 +41,14 @@ form {
 			</span>
 		
 	</nav>
-	<div class="container">
+	<div class="container pt-5">
        
-		<h3 class="m-4 text-center display-4" style="color:black"><strong>Project Details</strong></h3>
+		
 
 		<form:form action="/AuditCheckListQuestions"
 			modelAttribute="projectDetails" method="post"
-			class="px-5 py-4 border rounded">
+			class="px-5 border rounded">
+			<h3 class="m-4 text-center display-4" style="color:black"><strong>Project Details</strong></h3>
 
 			<div class="form-group">
 				<h5><form:label path="projectName">Project Name</form:label></h5>
@@ -87,7 +90,7 @@ form {
 						<label for="SOX" class="form-control"> SOX</label>
 					</div>
 					<input type="submit" class="btn btn-primary btn-block mt-3"
-						value="Submit" style="background-color:#0B539F;">
+						value="Submit" >
 				</form:form>
 			</div>
 

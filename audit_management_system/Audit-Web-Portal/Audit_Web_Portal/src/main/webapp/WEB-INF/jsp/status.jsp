@@ -16,7 +16,9 @@
     %>
     <style>
 		body {
-			background: linear-gradient(to right,#33ccff , #0B539F);
+			background-image:url("https://images.unsplash.com/photo-1543286386-2e659306cd6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+			background-repeat:no-repeat;
+			background-size:cover;
 			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		}
 		   table#table1 {

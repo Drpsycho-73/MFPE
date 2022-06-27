@@ -19,7 +19,9 @@
 <title>Audit Questions</title>
 <style>
 body {
-	background: linear-gradient(to right,#33ccff , #0B539F);
+	background-image:url("https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
+	background-repeat:no-repeat;
+	background-size:cover;
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -42,12 +44,13 @@ h3 {
 			</span>
 		
 	</nav>
-	<div class="container">
+	<div class="container pt-5">
 
-		<h3 class="m-4 display-4 text-center"><strong>${auditType.getAuditType()} Audit Questions</strong></h3>
+		
 		
 		<form:form action="/questions" method="post"
 			modelAttribute="questions" class="px-5 py-4 border rounded">
+			<h3 class="display-4 text-center"><strong>${auditType.getAuditType()} Audit Questions</strong></h3>
 			<c:forEach var="emp" items="${questions.questionsEntity}"
 				varStatus="status">
 				<h5 class="mt-3">${emp.question}</h5>

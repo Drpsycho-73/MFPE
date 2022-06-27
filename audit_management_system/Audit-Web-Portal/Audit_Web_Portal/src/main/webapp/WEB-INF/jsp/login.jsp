@@ -296,7 +296,13 @@
             </form:form>
             </c:when>
             	<c:when test="${msg != null}">
-            		<div> ${msg}. </div><div><br><br><a href="/loginPage">Click here</a> to login again</div>  
+            		<div style="display:flex; letter-spacing:0.5px;"> 
+            		<p style="padding-right:3px; height:8px">${msg}</p>  
+            		<a href="/loginPage" style="background-color:#0062D1; color:white; border-radius:4px; text-align:center; padding-left:3px; padding-right:3px"> 
+            		Click here 
+            		</a>
+            		<p style="padding-left:3px; height:8px">to login again</p>
+            		</div>  
             	</c:when>
             </c:choose>
         </div>
